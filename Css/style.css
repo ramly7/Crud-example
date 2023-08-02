@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7ecde;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+}
+h1::before{
+    content: '';
+    width: 25%;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 3rem;
+    background-color: #fec260;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 30%;
+    transition: all 0.3s;
+}
+h1::after{
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-image: radial-gradient(black 30%, transparent 30% );
+    background-size: 5px;
+    background-repeat: space;
+}
+.d-flex{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.d-flex h2,i{
+    font-size: 25px;
+}
+.d-flex h2{
+    font-family: 'Righteous', cursive;
+}
+.form-group{
+    position: relative;
+}
+.form-group i{
+    font-size: 16px;
+}
+.form-group button{
+    background-color: #d1512d;
+    border: none;
+}
+.form-group button:hover{
+    background-color: #983a20;
+    transition: all 0.3s;
+}
+.form-group button::after{
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-image: radial-gradient(black 30%, transparent 30% );
+    background-size: 5px;
+    background-repeat: space;
+}
+table i{
+    font-size: 16px;
+}
+table button{
+    border: none;
+    color: white;
+}
+table .visitBtn{
+    background-color: #9eb23b;
+}
+table .visitBtn:hover{
+    background-color: #6b7828;
+    transition: all 0.3s;
+}
+table .deleteBtn{
+    background-color: #eb1d36;
+}
+table .deleteBtn:hover{
+    background-color: #ae1527;
+    transition: all 0.3s;
+}
